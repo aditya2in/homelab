@@ -20,7 +20,7 @@ Control plane      master01       16 GB RAM
 Control plane      master02       16 GB RAM
 Control plane      master03       16 GB RAM
 Worker             worker01       16 GB RAM
-Worker + dev       gpuworker01    RTX 3060 · workstation
+Worker + dev       gpuworker01    RTX 3080 Ti · workstation
 Worker + GPU       gpuworker02    RTX 3060
 ```
 
@@ -31,7 +31,7 @@ Worker + GPU       gpuworker02    RTX 3060
 | `master02` | Control Plane | 16 GB RAM |
 | `master03` | Control Plane | 16 GB RAM |
 | `worker01` | Worker | 16 GB RAM |
-| `gpuworker01` | Worker + Workstation | RTX 3060 · dev environment |
+| `gpuworker01` | Worker + Workstation | RTX 3080 Ti (12 GB) · dev environment |
 | `gpuworker02` | Worker + GPU | RTX 3060 |
 
 ```text
@@ -57,7 +57,7 @@ Worker + GPU       gpuworker02    RTX 3060
 - **Networking (CNI):** Flannel (overlay)
 - **High Availability:** HAProxy + Keepalived (stacked topology)
 - **OS:** Arch Linux (headless) + Omarchy (workstation)
-- **GPU:** NVIDIA RTX 3060 ×2 (drivers + operator)
+- **GPU:** NVIDIA RTX 3080 Ti (gpuworker01) + RTX 3060 (gpuworker02) — drivers + operator
 
 ## 📂 Repository Layout
 
