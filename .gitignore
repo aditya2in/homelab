@@ -1,0 +1,48 @@
+# ─────────────────────────────────────────────────────────────
+# 🔒 SECRETS — NEVER COMMIT  (THIS REPO IS PUBLIC)
+# ─────────────────────────────────────────────────────────────
+*.key
+*.pem
+*.crt
+*.csr
+kubeconfig
+kubeconfig.*
+*.kubeconfig
+admin.conf
+.env
+.env.*
+secrets/
+secret/
+*token*
+*password*
+age.key
+age-key.txt
+*.agekey
+
+# kubeadm-generated PKI / etcd data
+pki/
+etcd/
+
+# cloud / provider credentials
+.aws/
+.gcloud/
+serviceaccount*.json
+credentials.json
+
+# ─────────────────────────────────────────────────────────────
+# 🗄️ LOCAL / MACHINE STATE
+# ─────────────────────────────────────────────────────────────
+backups/
+*.tar
+*.tar.gz
+*.tgz
+*.zip
+*.log
+*.tmp
+*.swp
+*.local
+.DS_Store
+
+# n8n runtime data
+n8n/config/
+n8n/backups/
